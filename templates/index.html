@@ -1,0 +1,18 @@
+
+   
+    {% block main%}
+    <form action="{{url_for('form')}}" method="post">
+        <br>
+        <label> <b>Number 1:</b></label> <input type="text" name = 'num1' placeholder="num1" required = "required">
+        <br><br>
+        <label> <b>Number 2:</b> </label> <input type="text" name = 'num2' placeholder="num2" required = "required">
+        <br><br>
+        <button class="btn btn-success" type="submit" name="result" value="+">+</button>
+        <button class="btn btn-success" type="submit" name="result" value="-">-</button>
+        <button class="btn btn-success" type="submit" name="result" value="/">/</button>
+        <button class="btn btn-success" type="submit" name="result" value="*">*</button>
+        
+
+      </form>
+      The Answer is {{score}}
+      {% endblock %}
